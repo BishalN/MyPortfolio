@@ -35,10 +35,10 @@
 
     <div class="hero">
       <div class="content">
-        <h1>Beautifully crafted web experiences</h1>
+        <h1 class="stagger1">Beautifully crafted web experiences</h1>
         <div class="meet">
-          <span>👇</span>
-          <p>Meet Bishal Neupane</p>
+          <span class="stagger1">👇</span>
+          <p class="stagger1">Meet Bishal Neupane</p>
         </div>
         <svg class="scroll" width="51" height="107" viewBox="0 0 51 107">
           <g id="lil" transform="translate(-162 -739)">
@@ -54,6 +54,7 @@
               <rect x="6" y="6" width="39" height="95" rx="19.5" fill="none" />
             </g>
             <ellipse
+              class="circle"
               id="Ellipse_1"
               data-name="Ellipse 1"
               cx="11.5"
@@ -134,7 +135,6 @@
             cx="75"
             cy="75"
             r="75"
-            class="square-anim"
             transform="translate(1187 453)"
             fill="#ff64cb"
           />
@@ -232,5 +232,79 @@
         <a href="#"><img src="images/chat.PNG" alt="Dev connector" /></a>
       </div>
     </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+      integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline();
+
+      tl.from('.content', {
+        y: '-30%',
+        opacity: 0,
+        duration: 2,
+        ease: Power4.easeOut,
+      });
+
+      tl.from(
+        '.stagger1',
+        {
+          opacity: 0,
+          y: -50,
+          stagger: 0.3,
+          ease: Power4.easeOut,
+          duration: 2,
+        },
+        '-=1.5'
+      );
+
+      tl.from(
+        '.hero-design',
+        {
+          opacity: 0,
+          y: 50,
+          ease: Power4.easeOut,
+          duration: 2,
+        },
+        '-=2'
+      );
+
+      gsap.from('.square-anim', {
+        stagger: 0.2,
+        scale: 0.1,
+        duration: 1,
+        ease: Back.easeOut.config(1.7),
+      });
+
+      gsap.from('.transition2', {
+        scrollTrigger: {
+          trigger: '.transition2',
+          start: 'top bottom',
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.3,
+      });
+
+      gsap.from('.transition3', {
+        scrollTrigger: {
+          trigger: '.transition3',
+          start: 'top bottom',
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.6,
+      });
+    </script>
   </body>
 </html>

@@ -171,6 +171,10 @@ section {
     text-align: left;
   }
 
+  .featured::before {
+    display: none;
+  }
+
   .featured,
   .portfolio-container {
     display: grid;
@@ -293,5 +297,19 @@ section {
 
   .hero .content {
     padding: 6em 8em 6em 10em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(176px, 758px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(176px, 798px);
   }
 }
