@@ -12,22 +12,34 @@
         <a href="index.html" class="logo">BishalNeupane</a>
         <nav>
           <ul>
-            <li><a href="#">My work</a></li>
-            <li><a href="#">My skills</a></li>
-            <li><a href="#">Hire me</a></li>
+            <li><a href="#portfolio">My work</a></li>
+            <li><a href="#skills">My skills</a></li>
+            <li>
+              <a href="https://beeeshal.blogspot.com/" target="_blank"
+                >My Blog</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
       <div class="social-header">
         <ul>
           <li>
-            <a href="#"><img src="images/youtube.svg" alt="youtube" /></a>
+            <a
+              href="https://www.youtube.com/channel/UCn99VN-I_vSU7SmGvIhJQiA"
+              target="_blank"
+              ><img src="images/youtube.svg" alt="youtube"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="https://www.linkedin.com/in/bishalnp/" target="_blank"
+              ><img src="images/linkedin.svg" alt="LinkedIn"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+            <a href="https://twitter.com/BeeshalNeupane" target="_blank"
+              ><img src="images/twitter.svg" alt="Twitter" target="_blank"
+            /></a>
           </li>
         </ul>
       </div>
@@ -151,20 +163,28 @@
         </g>
       </svg>
     </div>
-    <section class="featured">
+    <section class="featured" id="featured">
       <div class="left">
         <div class="inner transition2">
           <p class="subtitle">Featured Project</p>
-          <a href="#" class="featured-title">ProShop.com Redisign</a>
+          <a href="#" class="featured-title">ProShop</a>
           <p class="featured-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-            aspernatur?
+            A full featured MERN stack ecommerce application With admin
+            dashboard to manage products addition deletion and delivery status.
+            The backend is developed using NODEJS. REACTJS for the frontend &
+            Redux for an app level state management. Paypal integeration for
+            payment.
+            <a
+              href="https://github.com/NewtonBishal/ecommerce-MERN"
+              target="_blank"
+              >Check it out on github</a
+            >
           </p>
         </div>
       </div>
       <img src="images/proshop.PNG" alt="Pro Shop" class="right transition2" />
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="skills-container">
         <ul>
           <li class="transition2">
@@ -173,8 +193,7 @@
             </div>
             <p class="skill-title">UI UX Design</p>
             <p class="feature-desc skill-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              facilis.
+              Get better UI and UX for your product
             </p>
           </li>
 
@@ -184,8 +203,7 @@
             </div>
             <p class="skill-title">Frontend development</p>
             <p class="feature-desc skill-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              facilis.
+              With the best in the industry REACTJS
             </p>
           </li>
 
@@ -195,23 +213,71 @@
             </div>
             <p class="skill-title">Backend development</p>
             <p class="feature-desc skill-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              facilis.
+              With the best in the industry NODEJS Rest and Graphql
             </p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Real Listing App</p>
+            <p class="featured-title">Btre-Realstate</p>
+            <p class="featured-desc">
+              A real state listing application allows an admin user to list the
+              realstate. The visitors of the website can login , register and
+              make request for a realstate. The realtors of the site will be
+              notified whenever their is request for a certain realstate. This
+              site uses django.
+              <a
+                href="https://github.com/NewtonBishal/RealstateApp"
+                target="_blank"
+                >Check it out on github</a
+              >
+            </p>
+          </div>
+        </div>
+        <a href="#"><img src="images/realstate.PNG" alt="Btre-Realstate" /></a>
+      </div>
+
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Frontend</p>
+            <p class="featured-title">Natours</p>
+            <p class="featured-desc">
+              This is a just a design for a fictional travel related company
+              made just using html and scss
+              <a
+                href="https://github.com/NewtonBishal/Natours-CSS-Only-WebPage"
+                target="_blank"
+                >Check it out on github</a
+              >
+            </p>
+          </div>
+        </div>
+        <a href="#"><img src="images/natours.PNG" alt="Natours" /></a>
+      </div>
+
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
             <p class="subtitle">Social App</p>
             <p class="featured-title">Dev-connector</p>
             <p class="featured-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-              repellendus.
+              Dev Connector is a social media app for developers where developer
+              can connect with each other. Create posts, and discuss about it.
+              Dev connector was built on MERN stack meaning this app uses
+              mongodb as its database. Node on its backend . ReactJs on the
+              frontend.
+              <a
+                href="https://github.com/NewtonBishal/Dev-Connector"
+                target="_blank"
+                >Check it out on github</a
+              >
             </p>
           </div>
         </div>
@@ -224,14 +290,40 @@
             <p class="subtitle">Chat App</p>
             <p class="featured-title">Mini Slack</p>
             <p class="featured-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-              repellendus.
+              A simple chat application that allows user to create a room and
+              just chat. This app uses socket.io.
+              <a href="https://github.com/NewtonBishal/Chat-App" target="_blank"
+                >Check it out on github</a
+              >
             </p>
           </div>
         </div>
         <a href="#"><img src="images/chat.PNG" alt="Dev connector" /></a>
       </div>
     </section>
+
+    <section class="cta">
+      <h1 style="margin-top: -3em">
+        Like what you see?
+        <a
+          href="https://www.upwork.com/o/profiles/users/~01182d696a155c95ce/"
+          target="_blank"
+          class="cta-main"
+          >Hire me</a
+        >
+      </h1>
+    </section>
+
+    <footer class="footer-container">
+      <h2>Have a nice day 👍</h2>
+
+      <q cite="william ernest henley">
+        Master of my fate & captain of my sould
+      </q>
+      <span class="mr-2">-William Ernest Henley</span>
+    </footer>
+
+    <!---------------------------------Scripts--------------------------------------------------------------->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
@@ -243,7 +335,36 @@
       integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+      //smooth scroll effect script
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $('a').on('click', function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== '') {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+
       gsap.registerPlugin(ScrollTrigger);
       var tl = gsap.timeline();
 

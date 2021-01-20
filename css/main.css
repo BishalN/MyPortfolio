@@ -3,6 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -25,6 +26,16 @@ img {
 
 .nav-container a {
   color: white;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-container h2 {
+  font-size: 1.4em;
+  margin-top: -2rem;
+  color: rgba(110, 0, 255, 0.5);
 }
 
 header {
@@ -332,5 +343,12 @@ section {
     -webkit-transform: translate(176px, 798px);
             transform: translate(176px, 798px);
   }
+}
+
+.cta-main {
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  color: #ff64cb;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
